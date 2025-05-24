@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Shot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted class="background-video">
+        <source src="videos/coffee.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1 class="fade-in">Welcome to The Velvet Shot</h1>
+        <p class="fade-in">Premium Frozen Espresso Pods | India to Ireland</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Indulge in the Purest Espresso</h2>
+        <p>Crafted in India. Perfected for Ireland.</p>
+        <button onclick="smoothScroll()">Discover Our Pods</button>
+    </section>
+
+    <!-- Interactive Pods Section -->
+    <section class="pods">
+        <h2>Our Collection</h2>
+        <div class="pod" onmouseover="showDetails('Classic Velvet')">
+            <img src="images/classic-velvet.jpg" alt="Classic Velvet Pod">
+            <p id="pod-description">Hover to see details</p>
+        </div>
+        <div class="pod" onmouseover="showDetails('Silk Shot Arabica')">
+            <img src="images/silk-shot.jpg" alt="Silk Shot Arabica Pod">
+            <p id="pod-description">Hover to see details</p>
+        </div>
+    </section>
+
+    <!-- Pre-Order Form -->
+    <section class="order">
+        <h2>Pre-Order Your Espresso Pods</h2>
+        <form action="submit_order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="product">Choose Espresso Pod:</label>
+            <select id="product">
+                <option value="classic">Classic Velvet Espresso</option>
+                <option value="arabica">Silk Shot Arabica</option>
+            </select>
+            
+            <button type="submit">Pre-Order Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Velvet Shot | Dublin, Ireland</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

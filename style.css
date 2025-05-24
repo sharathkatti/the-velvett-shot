@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    background-color: #2e1a12; /* Deep Coffee Brown */
+    color: #f8e1c6; /* Soft Cream */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background-color: #452312;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+    color: #f8e1c6;
+}
+
+/* Smooth Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+button {
+    background-color: #704c2e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #9c6c3c;
+}
+
+/* Coffee Pods */
+.pods {
+    margin: 30px;
+    padding: 20px;
+    background-color: #604030;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Interactive Coffee Pod Hover Effect */
+.pod img {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pod:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #452312;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
